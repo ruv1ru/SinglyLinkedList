@@ -1,0 +1,15 @@
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/bin/Debug/net6.0/SinglyLinkedListStructure
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/bin/Debug/net6.0/SinglyLinkedListStructure.deps.json
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/bin/Debug/net6.0/SinglyLinkedListStructure.runtimeconfig.json
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/bin/Debug/net6.0/SinglyLinkedListStructure.dll
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/bin/Debug/net6.0/ref/SinglyLinkedListStructure.dll
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/bin/Debug/net6.0/SinglyLinkedListStructure.pdb
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.csproj.AssemblyReference.cache
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.AssemblyInfoInputs.cache
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.AssemblyInfo.cs
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.csproj.CoreCompileInputs.cache
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.dll
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/ref/SinglyLinkedListStructure.dll
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.pdb
+/Users/ruviru/Documents/projects/SinglyLinkedListStructure/SinglyLinkedList/SinglyLinkedListStructure/obj/Debug/net6.0/SinglyLinkedListStructure.genruntimeconfig.cache
