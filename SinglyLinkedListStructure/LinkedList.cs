@@ -86,6 +86,12 @@ public class LinkedList
             return false;
         }
 
+        public bool DeleteAtHead(){
+            if(IsEmpty())return false;
+            Head = Head.NextElement;
+            return true;
+        }
+
         public bool PrintList()
         {
             if (IsEmpty())
