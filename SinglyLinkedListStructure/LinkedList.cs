@@ -76,20 +76,63 @@ public class LinkedList
         {
             if(IsEmpty()) return false;
             
-            var cureentNode = this.Head;
-            while(cureentNode != null) 
+            var currentNode = this.Head;
+            while(currentNode != null) 
             {
-                if(cureentNode.Data == value) return true;
-                cureentNode = cureentNode.NextElement;
+                if(currentNode.Data == value) return true;
+                currentNode = currentNode.NextElement;
             }
 
             return false;
         }
 
-        public bool DeleteAtHead(){
+        public bool DeleteAtHead() {
             if(IsEmpty())return false;
             Head = Head.NextElement;
             return true;
+        }
+
+        public bool DeleteAtTail() {
+            if(IsEmpty()) return false;
+            if(Head.NextElement == null) return DeleteAtHead();
+            
+            var deleted = false; 
+            var currentNode = Head;
+            while(currentNode.NextElement != null) {
+                if(currentNode.NextElement.NextElement == null){
+                    currentNode.NextElement = null;
+                    deleted = true;
+                    break;
+                }
+                currentNode = currentNode.NextElement;
+            }
+            return deleted;
+        }
+
+        /// <summary>
+        /// Function to delete a node with particular value from the list
+        /// </summary>
+        /// <param name="value">A value to be deleted</param>
+        /// <returns>true if the value is deleted but false otherwise</returns>
+        public bool Delete(int value){
+            if(IsEmpty()) return false;
+            if(Head.Data == value) return DeleteAtHead();
+
+            var deleted = false; 
+
+            var prevNode = Head;
+            var currentNode = Head.NextElement;
+            while(currentNode != null) {
+                if(currentNode.Data == value){
+                    prevNode.NextElement = currentNode.NextElement;
+                    deleted = true;
+                    break;
+                }
+                prevNode = currentNode;
+                currentNode = currentNode.NextElement;
+            }
+            return deleted;
+
         }
 
         public bool PrintList()
