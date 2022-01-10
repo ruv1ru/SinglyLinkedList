@@ -153,4 +153,71 @@ public class LinkedList
             Console.WriteLine("null ");
             return true;
         }
-    }
+
+
+        /// <summary>
+        /// Given an array of k linked-lists lists, each linked-list is sorted in ascending order.
+        /// Function to merge all the linked-lists into one sorted linked-list and return it.
+        /// Example:
+        /// Input: lists = [[1,4,5],[1,3,4],[2,6]]
+        /// Output: [1,1,2,3,4,4,5,6]
+        /// </summary>
+        /// <param name="lists">array of sorted linked-lists</param>
+        /// <returns>merged sorted list</returns>
+        public static LinkedList MergeKLists(LinkedList[] lists) {
+
+            var mergedList = new LinkedList();
+
+            for(int i = 0; i < lists.Length; i++) {
+                var list = lists[i];
+                if(list.Head == null) continue;
+                mergedList = MergeLists(mergedList, list);
+            }
+
+            return mergedList;
+        }
+
+        private static LinkedList MergeLists(LinkedList listA, LinkedList listB)
+        {
+            if(listB.Head == null) return listA;
+            if(listA.Head == null) return listB;
+
+            var mergedList = new LinkedList();
+
+            var listACurrentNode = listA.Head;
+            var listBCurrentNode = listB.Head;
+
+            while(listACurrentNode != null && listBCurrentNode != null) {
+                if(listACurrentNode.Data <= listBCurrentNode.Data){
+                    mergedList.InsertAtTail(listACurrentNode.Data);
+                    listACurrentNode = listACurrentNode.NextElement;
+                    if(listACurrentNode == null){
+                        var listBNextNode = listBCurrentNode;
+                        mergedList.InsertAtTail(listBNextNode.Data);
+                        while(listBNextNode.NextElement != null){
+                            listBNextNode = listBNextNode.NextElement;
+                            mergedList.InsertAtTail(listBNextNode.Data);
+                        }
+                        break;
+                    }
+                }
+                else{
+                    mergedList.InsertAtTail(listBCurrentNode.Data);
+                    listBCurrentNode = listBCurrentNode.NextElement;
+                    if(listBCurrentNode == null){
+                        var listANextNode = listACurrentNode;
+                        mergedList.InsertAtTail(listANextNode.Data);
+                        while(listANextNode.NextElement != null){
+                            listANextNode = listANextNode.NextElement;
+                            mergedList.InsertAtTail(listANextNode.Data);
+                        }
+                        break;
+                    }
+                }
+
+            }
+
+            return mergedList;
+
+        }
+}
